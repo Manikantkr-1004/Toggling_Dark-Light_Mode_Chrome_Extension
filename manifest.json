@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Toggling Dark Mode",
+    "version": "1.0.0",
+    "description": "A Chrome extension for custom page styling like Toggling Dark Mode. It is built by Manikant kumar",
+    "permissions": ["activeTab", "storage", "alarms"],
+    "icons": {
+      "16": "16.png",
+      "48": "48.png",
+      "128": "128.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon":{
+          "16": "16.png",
+          "48": "48.png",
+          "128": "128.png"
+        }
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
